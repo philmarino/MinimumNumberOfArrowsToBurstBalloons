@@ -2,7 +2,7 @@ from itertools import combinations
 
 def solved(combs, points):
     for comb in combs:
-        answer = [1 for each in range(len(points))]
+        answer = [1] * len(points)
 
         for num in comb:
             for i in range(len(points)):
